@@ -31,7 +31,6 @@ New-AzVirtualNetwork -Name $virtualNetworkName -ResourceGroupName $resourceGroup
 
 New-AzSshKey -Name $sshKeyName -ResourceGroupName $resourceGroupName -PublicKey $sshKeyPublicKey
 
-# VM #1 in Zone 1
 New-AzVm `
   -ResourceGroupName $resourceGroupName `
   -Name "$vmName-1" `
@@ -45,7 +44,6 @@ New-AzVm `
   -Credential $adminCredential `
   -Zone "1"
 
-# VM #2 in Zone 2
 New-AzVm `
   -ResourceGroupName $resourceGroupName `
   -Name "$vmName-2" `
