@@ -1,4 +1,4 @@
-$location = "canadacentral"
+$location = "uksouth"
 $resourceGroupName = "mate-azure-task-10"
 $networkSecurityGroupName = "defaultnsg"
 $virtualNetworkName = "vnet"
@@ -9,7 +9,7 @@ $sshKeyName = "linuxboxsshkey"
 $sshKeyPublicKey = Get-Content "~/.ssh/id_rsa.pub"
 $vmName = "matebox"
 $vmImage = "Ubuntu2204"
-$vmSize = "Standard_B2s"
+$vmSize = "Standard_B1s"
 
 # New-AzVM (Simple parameter set) requires a PSCredential:
 # - username/password are used only for provisioning the OS account
